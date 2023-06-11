@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"> 
+  <title>Refuge SPA de Valence 🐶</title>
+</head>
+
+<body>
+  <!--START Header : logo + menu déroulant de ma page-->
+  <header>
+    <div class="container-fluid">
+      <nav class="p-3 navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </button>
+          
+          <!--START menu déroulant intial-->
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav container-fluid d-md-flex flex-md-column">
+              <li class="nav-item d-md-flex  flex-md-wrap flex-md-row justify-content-md-between align-md-center mr-3">
+                <a class="nav-link fs-4" href="#" role="button" aria-expanded="false">Accueil</a>
+                <!--START - Sous menu Adopter-->
+                <a class="nav-link fs-4 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Adopter</a>
+                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                  <li><a class="dropdown-item fs-5" href="#">Frais et condition d'adoption</a></li>
+                  <li><a class="dropdown-item fs-5" href="#">Nos chiens</a></li>
+                  <li><a class="dropdown-item fs-5" href="#">Nos chats</a></li>
+                  <li><a class="dropdown-item fs-5" href="#">Nos Nacs</a></li>
+                </ul>
+                <!--END - Sous menu Adopter-->
+                <a class="nav-link fs-4" href="#" role="button" aria-expanded="false">Perdus/trouvés</a>
+                <!--START - Sous menu Nous soutenir-->
+                <a class="nav-link fs-4 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nous soutenir</a>
+                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                  <li><a class="dropdown-item fs-5" href="#">Faire un don</a></li>
+                  <li><a class="dropdown-item fs-5" href="#">Adhérer ou devenir bénévole</a></li>
+                  <li><a class="dropdown-item fs-5" href="#">Faire un geste simple</a></li>
+                  <li><a class="dropdown-item fs-5" href="#">Parrainer</a></li> 
+                </ul>
+                <!--END - Sous menu Nous soutenir-->
+                <!--START - Sous menu Vie du refuge-->
+                <a class="nav-link fs-4 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vie du refuge</a>
+                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                  <li><a class="dropdown-item fs-5" href="#">Nos reportages</a></li>
+                  <li><a class="dropdown-item fs-5" href="#">Nos sauvetages</a></li>
+                  <li><a class="dropdown-item fs-5" href="#">Ils nous ont quitté</a></li>
+                </ul>
+                <!--END - Sous menu Vie du refuge-->
+                <a class="nav-link fs-4" href="#" role="button" aria-expanded="false">Nos partenaires</a>
+                <a class="nav-link fs-4" href="#" role="button" aria-expanded="false">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <!--END menu déroulant intial-->
+        </div>
+      </nav>
+      <!--START Titre + bande d'images-->
+      <div class="header">
+        <h1 class="fw-bold display-1 text-center text-uppercase text-danger">ASPA Valence</h1>
+        <h2 class="fw-bold display-3 text-center text-uppercase text-danger">Refuge Saint-Roch</h2>
+        <div>
+          <img class="bande" src="./Images/Bande.png" alt="Bande d'images">
+        </div>
+      </div>
+      <!--END Titre + bande d'images-->
+    </div>
+  </header>
+  <!--END Header-->
+
+  <main>
+    <div class="container container-fluid">
+      <!--START Page publicitaire-->
+      <aside>
+        <div class="aside flux"> 
+          <a href="./Page2.html" >
+            <img class="img-thumbnail img-fluid mt-5 p-3" src="./Images/Portes_ouvertes.png" alt="Portes ouvertes" title="Cliquez ici">
+          </a>
+        </div>
+      </aside>
+      <!--END Page publicitaire-->
+
+      <!--START Adoption - 1ère section de ma page-->
+      <section class="adoption flux">
+        <h2 class="fw-bold display-3 text-center text-uppercase text-danger mb-5">Recherche famille d'accueil</h2>
+          <!--START Bobby le chien-->
+          <div class="animals">
+            <!--START Bobby le chien-->
+            <div class="card text-center mt-5 p-4" style="width: 30rem;">
+              <img src="./Images/Chien_agé.jpg" class="card-img-top" alt="Chien âgé">
+              <h4 class="card-title fw-bold text-uppercase text-primary fs-4">Booby</h4>
+              <h5 class="card-subtitle mb-2 text-muted">Mâle de 10 ans</h5>
+              <p class="card-text">Venez le rencontrer, venez le sauver, il n'attend plus que vous !.</p>
+              <a href="#" class="card-link text-lowercase">Je suis ici</a>
+            </div>
+            <!--END Bobby le chien-->
+
+            <!--START Mandarine la chatte-->
+            <div class="card text-center mt-5 p-4" style="width: 30rem;">
+              <img src="./Images/Chat.jpg" class="card-img-top" alt="Chatte">
+              <h4 class="card-title  fw-bold text-uppercase text-primary fs-4">Mandarine</h4>
+              <h5 class="card-subtitle mb-2 text-muted">Femelle de 6 ans</h5>
+              <p class="card-text">Tombez sous le charme de ses yeux verts et repartez ensemble !</p>
+              <a href="#" class="card-link text-lowercase">Je suis ici</a>
+            </div>
+            <!--END Mandarine la chatte--> 
+          </div>
+      </section>
+      <!--END Adoption - 1ère section de ma page-->
+
+      <!--START Teaming - 2ème section de ma page-->
+      <section class="teaming flux">
+        <h2 class="fw-bold display-3 text-center text-uppercase text-danger mb-4 pb-4">Teaming</h2>
+          <!--START - Logo-->
+          <p>
+              <a  href="#">
+                  <img class="img-fluid rounded float-end w-25" src="./Images/Logo_ASPA.jpg" alt="Logo ASPA">
+              </a>
+          </p>   
+          <!--END - Logo-->
+
+          <!--START - Text-->
+          <div class="teaming-text">
+            <p>Bonjour à tous ! 😁</p>
+            <p>Un teaming pour le refuge est mis en place depuis quelques temps pour récolter des fonds.
+            <p>Qu'est-ce que teaming ? 🤔           C'est une plateforme d'aide aux associations qui fonctionne avec un micro don de 1€ par mois, prélévé sur votre compte. L'idée est de pouvoir donner chacun à sa façon cette petite somme très utile (don unique de 1€ chaque mois) mais qui, additionnés les uns aux autres permettent de belles sommes ! 💰</p>
+            <p>C'est un acte facile, sécurisé, rapide et qui peut permettre de donner sans grever son budget, d'autant plus qu'il est défiscalisé.</p>
+            <p>Merci à vous, merci pour eux ! 🐕🐈🐇🐀</p>
+            <p class="fw-bolder fst-italic">Cliquez sur le logo pour accéder au teaming</p>
+          </div>
+          <!--END - Text-->
+
+      </section> 
+      <!--END Teaming - 2ème section de ma page-->     
+    </div>
+  </main>
+
+  <footer>
+    <div class="container container-fluid">
+      <!--START Contacts-->
+      <div class="footer-contact">
+        <!--START adresse -mails-horaires-->
+        <div class="title">
+          <h3 class=" fw-bold text-center text-dark">Pour nous contacter</h3>
+        </div>
+        <ul class="adress">
+          <li class="lh-2">TEL : 04.75.41.65.15</li>
+          <li class="lh-2">aspa.valence26@gmail.com </li>
+          <li class="lh-2">Chemin de la Motte à Mauboule</li>
+          <li class="lh-2">26000 VALENCE</li>
+        </ul>
+        <ul class="opening">
+          <li class="lh-2">Ouvert au public du lundi au samedi de 14h à 18h</li>
+          <li class="lh-2">FERMÉ LE DIMANCHE ET JOURS FÉRIÉS</li>
+        </ul>  
+        <ul class="email-news">
+          <li class="lh-2 text-center">Donner des nouvelles des adoptés :</li>
+          <li class="lh-2 text-center fst-italic text-decoration-underline text-lowercase">nouvelles.aspa@gmail.com</li>
+        </ul>
+        <ul class="email-abuse">
+          <li class="lh-2 text-center">Signaler une maltraitance :</li>
+          <li class="lh-2 text-center fst-italic text-decoration-underline text-lowercase">maltraitance.aspa26@gmail.com</li>
+        </ul>
+      <!--END adresse -mails-horaires-->
+      
+      <!--START LOGO partenaires-->
+      <div class="footer-Hello">
+        <a href="#">
+          <img class="img-fluid" src="./Images/Hello_Asso.png" alt="helloasso">
+        </a>
+      </div>
+      <div class="footer-CNDA">
+        <a href="#">
+          <img class="img-fluid" src="./Images/Defense_animale.jpg" alt="Confédération Nationale Défense Animale">
+        </a>  
+      </div>
+      <div class="footer-Relance">
+        <img class="img-fluid" src="./Images/France_relance.jpg" alt="France Relance">
+      </div>
+      <div class="reseau">
+        <button type="button" class="btn btn-primary">
+          <i class="bi bi-hand-thumbs-up">
+            <a class="button" href="#">Facebook</a>
+          </i>
+        </button>
+      </div>
+      <!--END LOGO partenaires-->  
+
+      <!--START Mentions légales-->
+      <div class="CGU">
+        <p>
+          <a class="text-decoration-none text-lowercase" href="">Mentions légales</a> | <a class="text-decoration-none text-lowercase" href="">Politique de confidentialité</a> | <a class="text-decoration-none text-lowercase" href="">Politique de cookies</a> | <a class="text-decoration-none text-lowercase"href="">Plan du site</a>
+        </p>
+      </div>
+      <!--END Mentions légales-->
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>

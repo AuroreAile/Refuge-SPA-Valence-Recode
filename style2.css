@@ -1,0 +1,77 @@
+/*Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-size: larger;
+  line-height: 1.50;
+}
+
+/*1ère section*/
+.cover {
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image {
+  width: 75%;
+}
+
+/*2ème section*/
+.certificat {
+  font-size: x-small;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/*footer*/
+.logo-button {
+  display: flex;
+  justify-content: space-between;
+  align-items : center;
+}
+
+.logo_spa {
+  width: 30%;
+  height: 30%;
+}
+
+/*TABLETTE*/
+@media screen and (min-width: 768px) and (max-width: 1100px){
+  .logo-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items : center;
+ }
+  .logo_spa {
+    width: 25%;
+    height: 25%;
+ }
+}
+
+/*ORDINATEUR*/
+@media screen and (min-width: 1100px) {
+  .affiche {
+    width: 100%;
+    height: auto;
+  }
+  
+  .logo-button {
+    display: flex;
+    justify-content: space-around;
+    align-items : center;
+  }
+
+  .logo_spa {
+    width: 15%;
+    height: 15%;
+ }
+}

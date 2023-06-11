@@ -1,0 +1,229 @@
+/*Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flux {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+main {
+  background-color: rgb(244, 210, 167);
+}
+
+/*HEADER*/
+nav, li, a{
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f7bca3;
+}
+
+.header {
+  margin-top: 25%;
+  margin-bottom: 10%;
+}
+
+.bande {
+  max-width: 100%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+/*ASIDE*/
+.aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*1ère SECTION - Adoption*/
+.adoption {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+
+.animals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title{
+  font-size: 18px;
+}
+
+/*2ème SECTION - Teaming*/
+.teaming {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.teaming-text {
+  display: flex;
+  flex-direction: column;
+  justify-content:start;
+  align-items: start;
+  gap: 20 px;
+  font-size: larger;
+}
+
+/*FOOTER*/
+footer {
+  background-color: rgb(167, 167, 167);
+}
+
+.footer-contact {
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  grid-template-rows: 70px 120px 100px repeat(3 , 150px) 50px;
+  grid-template-areas: 
+    "title title"
+    "adress opening"
+    "email-news email-abuse"
+    "footer-Hello footer-Hello"
+    "footer-CNDA footer-CNDA"
+    "footer-Relance footer-Relance"
+    "reseau reseau";
+  justify-items: center;
+  align-items: center;
+  font-size: 0.85rem;
+  gap: 25px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.title {
+  grid-area: title;
+}
+
+.adress {
+  grid-area: adress;
+}
+
+.opening {
+  grid-area: opening;
+}
+
+.email-news {
+  grid-area: email-news;
+}
+
+.email-abuse {
+  grid-area: email-abuse;
+}
+
+.footer-Hello {
+  grid-area: footer-Hello;
+}
+
+.footer-Hello img {
+  max-width: 15rem;
+}
+
+.footer-CNDA {
+  grid-area: footer-CNDA;
+}
+
+.footer-CNDA img {
+  max-width: 9rem;
+}
+
+.footer-Relance {
+  grid-area: footer-Relance;
+}
+
+.footer-Relance img {
+  max-width: 9rem;
+}
+
+.reseau {
+  grid-area: reseau;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.CGU {
+  text-align: center;
+  font-size: smaller;
+}
+
+/*TABLETTE*/
+@media screen and (min-width: 768px) and (max-width: 1100px){
+  .flux {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .animals {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  } 
+  
+  .footer-contact {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(5 , 100px);
+    grid-template-areas: 
+      "title title title"
+      "adress footer-Hello footer-CNDA"
+      "opening footer-Hello footer-CNDA"
+      "email-news reseau footer-Relance"
+      "email-abuse reseau footer-Relance";
+      justify-items: center;
+      align-items: center;
+  }
+}
+
+/*ORDINATEUR*/
+@media screen and (min-width: 1100px) {
+  .flux {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .animals {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  } 
+  
+  .teaming-text {
+    font-size: larger;
+  }
+
+   .footer-contact {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(5 , 100px);
+    gap: 15px;
+    grid-template-areas: 
+      "title title title"
+      "adress footer-Hello footer-CNDA"
+      "opening footer-Hello footer-CNDA"
+      "email-news reseau footer-Relance"
+      "email-abuse reseau footer-Relance";
+      justify-items: center;
+      align-items: center;
+    }
+}
